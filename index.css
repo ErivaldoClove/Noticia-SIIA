@@ -1,0 +1,102 @@
+.PaiNoticias {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+}
+
+.PaiNoticiaContinua {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+}
+
+.Organize {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Topic p {
+    color: #fff;
+    background: #0a700a;
+    padding: 8px;
+    min-width: 100%;
+    border-radius: 7px;
+}
+
+.Data p {
+    color: #848181;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.FotoNoticia img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+}
+
+.TextoNoticia h2 {
+    color: #0a700a;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.TextoNoticia p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: justify;
+
+
+}
+
+.PosicaoBTN {
+    display: flex;
+    justify-content: space-between;
+}
+
+.BTNLERMAIS {
+    background: #0a700a;
+    color: #fff;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Media query para telas menores */
+@media(max-width: 700px) {
+
+    /* Ajuste das colunas para telas menores */
+    .PaiNoticias {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    /* Ajuste do tamanho da imagem para telas menores */
+    .FotoNoticia img {
+        height: 250px;
+        border-radius: 7px;
+    }
+
+    /* Ajuste do tamanho do título para telas menores */
+    .TextoNoticia h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Ajuste do tamanho do texto para telas menores */
+    .TextoNoticia p {
+        font-size: 14px;
+    }
+}
